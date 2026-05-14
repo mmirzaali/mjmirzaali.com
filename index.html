@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>bio-TIE Lab | Mohammad J. Mirzaali</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     /* ===== CSS RESET & VARIABLES ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,11 +31,13 @@
 
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
       color: var(--text);
       background: var(--light-bg);
       line-height: 1.7;
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     a { color: var(--blue); text-decoration: none; }
@@ -92,7 +96,7 @@
       gap: 60px; align-items: center;
     }
     .hero-text h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Playfair Display', 'Georgia', 'Garamond', 'Times New Roman', serif;
       font-size: clamp(2.2rem, 5vw, 3.8rem);
       color: #fff; line-height: 1.15; margin-bottom: 12px;
     }
@@ -174,7 +178,7 @@
       padding: 4px 14px; border-radius: 50px; margin-bottom: 14px;
     }
     .section-header h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Playfair Display', 'Georgia', 'Garamond', 'Times New Roman', serif;
       font-size: clamp(1.8rem, 3vw, 2.6rem);
       color: var(--navy); line-height: 1.25;
     }
@@ -227,19 +231,6 @@
       border-radius: 50px; padding: 4px 14px;
       font-size: 0.8rem; font-weight: 500;
     }
-    .startup-card {
-      background: #fff; border-radius: 10px;
-      padding: 16px 20px; margin-bottom: 12px;
-      border: 1px solid var(--border);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .startup-card h4 { font-size: 1rem; color: var(--navy); font-weight: 700; }
-    .startup-card .startup-role {
-      font-size: 0.8rem; color: var(--green); font-weight: 600;
-      margin-bottom: 6px;
-    }
-    .startup-card p { font-size: 0.85rem; color: var(--muted); }
-
     /* ===== RESEARCH ===== */
     #research { background: var(--light-bg); }
     .research-grid {
@@ -341,7 +332,7 @@
       background: var(--navy); color: #fff;
     }
     .pub-btn-doi:hover { background: var(--blue); color: #fff; text-decoration: none; }
-  2 .pub-btn-pdf {
+    .pub-btn-pdf {
       background: var(--red); color: #fff;
     }
     .pub-btn-pdf:hover { background: #a93226; color: #fff; text-decoration: none; }
@@ -527,19 +518,19 @@
 <section class="hero" id="home">
   <div class="hero-inner">
     <div class="hero-text">
-      <p class="role">Associate Professor Â· bio-TIE Lab</p>
+      <p class="role">Associate Professor · bio-TIE Lab</p>
       <h1>Mohammad J.<br/>Mirzaali</h1>
-      <p class="institute">Department of Biomechanical Engineering Â· TU Delft, The Netherlands</p>
+      <p class="institute">Department of Biomechanical Engineering · TU Delft, The Netherlands</p>
       <p class="bio">
         Leading research at the intersection of biomimetics, additive manufacturing, and tissue interface engineering.
         Our lab designs next-generation bio-inspired materials and implants that bridge the gap between hard and soft biological tissues.
       </p>
       <div class="hero-badges">
-        <span class="badge">ð¬ Metamaterials</span>
-        <span class="badge">ð¦´ Biomechanics</span>
-        <span class="badge">ð¨ï¸ Additive Manufacturing</span>
-        <span class="badge">ð¤ AI-Assisted Design</span>
-        <span class="badge">ð§¬ Tissue Engineering</span>
+        <span class="badge">🔬 Metamaterials</span>
+        <span class="badge">🦴 Biomechanics</span>
+        <span class="badge">🖨️ Additive Manufacturing</span>
+        <span class="badge">🤖 AI-Assisted Design</span>
+        <span class="badge">🧬 Tissue Engineering</span>
       </div>
       <div class="hero-cta">
         <a href="#research" class="btn btn-primary">Explore Research</a>
@@ -558,7 +549,7 @@
       <span class="section-tag">About</span>
       <h2>Bridging Biology &amp; Engineering</h2>
       <div class="divider"></div>
-      <p>Associate Professor leading the <strong>bio-TIE</strong> (BIOmimetic Tissue InterfacEs) Lab â a multidisciplinary research group at the intersection of biomechanics, advanced manufacturing, and bioinspired design.</p>
+      <p>Associate Professor leading the <strong>bio-TIE</strong> (BIOmimetic Tissue InterfacEs) Lab — a multidisciplinary research group at the intersection of biomechanics, advanced manufacturing, and bioinspired design.</p>
     </div>
     <div class="about-grid">
       <div>
@@ -582,14 +573,14 @@
             <div class="timeline-date">2022</div>
             <div class="timeline-content">
               <div class="role-title">Co-guest Editor</div>
-              <div class="role-org">Journal of Functional Biomaterials â 'Advanced 3D printing Biomaterials'</div>
+              <div class="role-org">Journal of Functional Biomaterials — 'Advanced 3D printing Biomaterials'</div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-date">2021</div>
             <div class="timeline-content">
               <div class="role-title">Co-guest Editor</div>
-              <div class="role-org">APL Materials â 'Design, Material, Function, and Fabrication of Metamaterials'</div>
+              <div class="role-org">APL Materials — 'Design, Material, Function, and Fabrication of Metamaterials'</div>
             </div>
           </div>
         </div>
@@ -616,39 +607,6 @@
           </div>
         </div>
 
-        <div class="about-card" style="margin-bottom:24px">
-          <h3>Startups &amp; Innovation</h3>
-          <div class="startup-card">
-            <h4><a href="https://www.roylinx.com" target="_blank" rel="noopener" style="color:var(--navy);text-decoration:none;">Roylinx</a></h4>
-            <p>Develops sustainable bio-based inks for 3D printing with applications spanning biomedical to agricultural sectors. </p>
-          </div>
-          <div class="startup-card">
-            <h4><a href="https://www.morphly.com" target="_blank" rel="noopener" style="color:var(--navy);text-decoration:none;">Morphly</a></h4>
-            <p>A startup spun out from PhD research, focused on AI-driven design of patient-specific medical devices.</p>
-          </div>
-          <div class="startup-card">
-            <h4><a href="https://www.orthoclay.com" target="_blank" rel="noopener" style="color:var(--navy);text-decoration:none;">OrthoClay</a></h4>
-            <p>Developing next-generation 3D-printed flexible acetabular mesh for revision hip surgery, redefining orthopaedic implant solutions.</p>
-          </div>
-        </div>
-
-        <div class="about-card">
-          <h3>Awards</h3>
-          <div class="timeline-item">
-            <div class="timeline-date">2024</div>
-            <div class="timeline-content">
-              <div class="role-title">Materials 2024 Best Paper Award</div>
-              <div class="role-org">300 CHF prize</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">Dec 2016</div>
-            <div class="timeline-content">
-              <div class="role-title">IDEA League Students Grant</div>
-              <div class="role-org">3.5kâ¬</div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -668,7 +626,7 @@
       <div class="research-card">
         <div class="research-card-icon"></div>
         <div class="research-card-body">
-          <span class="research-emoji">ð</span>
+          <span class="research-emoji">🔗</span>
           <h3>Hard-Soft Interface Engineering</h3>
           <p>Designing bio-inspired interfaces between hard and soft biological tissues using multi-material 3D printing and biomimetic architectures. Our work on functionally graded interfaces addresses critical challenges in implant integration.</p>
         </div>
@@ -678,12 +636,22 @@
         <div class="research-card-icon" style="background:linear-gradient(90deg,#27ae60,#2980b9)"></div>
         <div class="research-card-body">
           <span class="research-emoji">
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;">
-              <rect x="3" y="28" width="32" height="5" rx="1.5" fill="#2980b9"/>
-              <rect x="6" y="21" width="26" height="5" rx="1.5" fill="#1a5fa8"/>
-              <rect x="9" y="14" width="20" height="5" rx="1.5" fill="#27ae60"/>
-              <rect x="14" y="5" width="10" height="7" rx="1.5" fill="#27ae60" opacity="0.75"/>
-              <polygon points="19,1 15,6 23,6" fill="#c0392b"/>
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;">
+              <!-- Additive manufacturing: stacked layers being built up -->
+              <!-- Layer 4 (bottom) -->
+              <rect x="4" y="34" width="34" height="5" rx="2.5" fill="#1a5fa8"/>
+              <!-- Layer 3 -->
+              <rect x="6" y="27" width="30" height="5" rx="2.5" fill="#2980b9"/>
+              <!-- Layer 2 -->
+              <rect x="9" y="20" width="24" height="5" rx="2.5" fill="#4aa8d8"/>
+              <!-- Layer 1 (top, partial — being deposited) -->
+              <rect x="12" y="13" width="18" height="5" rx="2.5" fill="#6ec6e8" opacity="0.85"/>
+              <!-- Deposition nozzle arm -->
+              <rect x="3" y="7" width="36" height="4" rx="2" fill="#0f2744"/>
+              <!-- Nozzle tip -->
+              <polygon points="18,11 24,11 21,16" fill="#27ae60"/>
+              <!-- Active deposition dot -->
+              <circle cx="21" cy="13" r="1.8" fill="#27ae60" opacity="0.9"/>
             </svg>
           </span>
           <h3>Additive Manufacturing &amp; 4D Printing</h3>
@@ -694,7 +662,7 @@
       <div class="research-card">
         <div class="research-card-icon" style="background:linear-gradient(90deg,#8e44ad,#1a5fa8)"></div>
         <div class="research-card-body">
-          <span class="research-emoji">ð§ </span>
+          <span class="research-emoji">🧠</span>
           <h3>Mechanical Metamaterials</h3>
           <p>Engineering auxetic, buckling-driven, and action-at-a-distance metamaterials with programmable mechanical properties. Leveraging AI and machine learning for inverse design and optimization.</p>
         </div>
@@ -703,7 +671,7 @@
       <div class="research-card">
         <div class="research-card-icon" style="background:linear-gradient(90deg,#c0392b,#e67e22)"></div>
         <div class="research-card-body">
-          <span class="research-emoji">ð¦´</span>
+          <span class="research-emoji">🦴</span>
           <h3>Bone Mechanics &amp; Implant Design</h3>
           <p>Patient-specific implants for orthopedics, mandibular reconstruction, and spinal cage design. Combining finite element modeling, topology optimization, and clinical biomechanics.</p>
         </div>
@@ -712,7 +680,7 @@
       <div class="research-card">
         <div class="research-card-icon" style="background:linear-gradient(90deg,#27ae60,#c0392b)"></div>
         <div class="research-card-body">
-          <span class="research-emoji">ð¿</span>
+          <span class="research-emoji">🌿</span>
           <h3>Bioinspired &amp; Sustainable Materials</h3>
           <p>Drawing inspiration from natural structures (bone, roots, shells) to design next-generation biomaterials. Includes food-waste biomaterials, sustainable inks for 3D printing, and biodegradable implants.</p>
         </div>
@@ -721,9 +689,9 @@
       <div class="research-card">
         <div class="research-card-icon" style="background:linear-gradient(90deg,#2980b9,#8e44ad)"></div>
         <div class="research-card-body">
-          <span class="research-emoji">ð¬</span>
+          <span class="research-emoji">🔬</span>
           <h3>Tissue Interface Engineering</h3>
-          <p>Engineering the transition zone between dissimilar biological tissues â bone-cartilage, bone-tendon, implant-bone â through graded materials, hierarchical microarchitectures, and cell-guiding scaffolds. The core mission of the <strong>bio-TIE</strong> Lab.</p>
+          <p>Engineering the transition zone between dissimilar biological tissues — bone-cartilage, bone-tendon, implant-bone — through graded materials, hierarchical microarchitectures, and cell-guiding scaffolds. The core mission of the <strong>bio-TIE</strong> Lab.</p>
         </div>
       </div>
 
@@ -760,14 +728,14 @@
           <div class="pub-meta">
             <div class="pub-title">Elasto-optic transduction in polymer-cladded silicon microring arrays for real-time 2D force mapping <span class="pub-tag tag-open">Open Access</span></div>
             <div class="pub-authors">Safarloo S, Erdogan RT, Westerveld WJ, Zadpoor AA, Steeneken PG, <strong>Mirzaali MJ</strong></div>
-            <div class="pub-journal"><em>Optics Express</em> <span>34(4), 6721â6735 (2026)</span></div>
+            <div class="pub-journal"><em>Optics Express</em> <span>34(4), 6721–6735 (2026)</span></div>
           </div>
         </div>
         <div class="pub-body">
-          <p class="pub-abstract">Silicon microring resonator arrays with polymer cladding for real-time two-dimensional force mapping via elasto-optic transduction. The sensor arrays achieve a force resolution down to 12 ÂµN, demonstrated with a five-ring linear array and a 10Ã5 two-dimensional array at 15 Âµm pitch â enabling high-resolution tactile sensing for biomedical and robotic applications.</p>
+          <p class="pub-abstract">Silicon microring resonator arrays with polymer cladding for real-time two-dimensional force mapping via elasto-optic transduction. The sensor arrays achieve a force resolution down to 12 µN, demonstrated with a five-ring linear array and a 10×5 two-dimensional array at 15 µm pitch — enabling high-resolution tactile sensing for biomedical and robotic applications.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1364/OE.584401" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-4-6721" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1364/OE.584401" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-4-6721" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -790,8 +758,8 @@
         <div class="pub-body">
           <p class="pub-abstract">A comprehensive review of non-planar additive manufacturing strategies using hydrogel-based inks, covering flow control mechanisms and toolpath optimization for complex 3D bioprinting applications including extrusion control, slicing algorithms, multi-axis systems, and support-free strategies.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1038/s44431-025-00006-5" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://www.nature.com/articles/s44431-025-00006-5" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1038/s44431-025-00006-5" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://www.nature.com/articles/s44431-025-00006-5" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -808,7 +776,7 @@
         <div class="pub-body">
           <p class="pub-abstract">Investigation of magnetic cells and scaffolds as a novel approach for bone tissue engineering, exploring how magnetic stimulation can enhance osteogenic differentiation and scaffold integration for next-generation orthopedic implants.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1002/advs.202410094" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
+            <a href="https://doi.org/10.1002/advs.202410094" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
           </div>
         </div>
       </div>
@@ -825,8 +793,8 @@
         <div class="pub-body">
           <p class="pub-abstract">Programmable shape-morphing 3D microarchitectures fabricated using two-photon polymerization (2PP) of temperature-responsive pNIPAM hydrogel, capable of rapid and reversible actuation. Enables precise, non-invasive, controllable deformation for soft robotics and microfluidic systems.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1038/s41598-025-06269-2" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://www.nature.com/articles/s41598-025-06269-2" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1038/s41598-025-06269-2" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://www.nature.com/articles/s41598-025-06269-2" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -837,13 +805,13 @@
           <div class="pub-meta">
             <div class="pub-title">Additively manufactured shape-morphing implants for the treatment of acetabular defects</div>
             <div class="pub-authors">Moosabeiki, V., Leeflang, M.A., Gerbers, J.G., de Jong, P.H., Broekhuis, D., Agarwal, Y., Ganesen, J.N., Kaptein, B.L., Nelissen, R.G.H.H., <strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
-            <div class="pub-journal"><em>Acta Biomaterialia</em> <span>2025 â in press (July 2025)</span></div>
+            <div class="pub-journal"><em>Acta Biomaterialia</em> <span>2025 — in press (July 2025)</span></div>
           </div>
         </div>
         <div class="pub-body">
           <p class="pub-abstract">Design, additive manufacturing, and evaluation of shape-morphing porous implants with kinematic structures for three acetabular defect types (posterior wall, cranial-posterior, central-posterior) in revision total hip arthroplasty. Demonstrates superior defect filling and mechanical stability.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1016/j.actbio.2025.07.018" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
+            <a href="https://doi.org/10.1016/j.actbio.2025.07.018" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
           </div>
         </div>
       </div>
@@ -853,14 +821,14 @@
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
             <div class="pub-title">High-performance 3D printed mechanically interlocked soft-hard interfaces of hydrogels and polylactide</div>
-            <div class="pub-authors">Kunkels, L., Cruz SaldÃ­var, M., Putra, N.E., Pitta Kruize, C., Panahkhahi, S., Leeflang, M.A., Fratila-Apachitei, L.E., Zadpoor, A.A., <strong>Mirzaali, M.J.*</strong></div>
+            <div class="pub-authors">Kunkels, L., Cruz Saldívar, M., Putra, N.E., Pitta Kruize, C., Panahkhahi, S., Leeflang, M.A., Fratila-Apachitei, L.E., Zadpoor, A.A., <strong>Mirzaali, M.J.*</strong></div>
             <div class="pub-journal"><em>Advanced Materials Technologies</em> <span>10, 2401081 (2025)</span></div>
           </div>
         </div>
         <div class="pub-body">
-          <p class="pub-abstract">Development of mechanically interlocked interfaces between hydrogels and polylactide using multi-material 3D printing, achieving high-performance combination of mechanical performance and biocompatibility for Hard-soft interface applications.</p>
+          <p class="pub-abstract">Development of mechanically interlocked interfaces between hydrogels and polylactide using multi-material 3D printing, achieving high-performance combination of mechanical performance and biocompatibility for hard-soft interface applications.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1002/admt.202401081" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
+            <a href="https://doi.org/10.1002/admt.202401081" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
           </div>
         </div>
       </div>
@@ -883,8 +851,8 @@
         <div class="pub-body">
           <p class="pub-abstract">A novel approach to suppress torsional buckling instabilities in auxetic meta-shells by combining auxeticity and orthotropy in cylindrical metamaterial shells. The work opens new design pathways for mechanically robust lightweight structures with negative Poisson's ratio under large twist angles.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1038/s41467-024-51104-3" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://www.nature.com/articles/s41467-024-51104-3" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1038/s41467-024-51104-3" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://www.nature.com/articles/s41467-024-51104-3" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -901,8 +869,8 @@
         <div class="pub-body">
           <p class="pub-abstract">A design approach that harnesses anisotropic deformation and micro-defect formation during fused deposition modeling to create tailor-made curved geometries from initially 2D flat disks. Size and distribution of imperfections can be controlled by varying printing speed and number of printed materials. Featured in Springer Nature's "Behind the Paper" series.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1038/s43246-024-00448-w" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://www.nature.com/articles/s43246-024-00448-w" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1038/s43246-024-00448-w" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://www.nature.com/articles/s43246-024-00448-w" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -919,7 +887,7 @@
         <div class="pub-body">
           <p class="pub-abstract">A comprehensive overview of 4D printing for biomedical applications, covering shape-memory polymers, hydrogels, and composite materials that respond to biological and physical stimuli for stents, occluders, microneedles, drug delivery systems, wound closures, and implantable medical devices.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1002/adma.202402301" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
+            <a href="https://doi.org/10.1002/adma.202402301" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
           </div>
         </div>
       </div>
@@ -929,15 +897,15 @@
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
             <div class="pub-title">Multi-material 3D printing of functionally graded soft-hard interfaces for enhancing mandibular kinematics of temporomandibular joint replacement prostheses <span class="pub-tag tag-open">Open Access</span></div>
-            <div class="pub-authors">Moosabeiki, V., Khan, A., Cruz SaldÃ­var, M., Van Paepegem, W., Jonker, B.P., Wolvius, E.B., â¦<strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
+            <div class="pub-authors">Moosabeiki, V., Khan, A., Cruz Saldívar, M., Van Paepegem, W., Jonker, B.P., Wolvius, E.B., …<strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
             <div class="pub-journal"><em>Communications Materials</em> <span>5, 226 (2024)</span></div>
           </div>
         </div>
         <div class="pub-body">
-          <p class="pub-abstract">Development of functionally graded soft-hard interface prostheses for temporomandibular joint replacement. Five FGM designs â including hard, hard-soft, and three gradual transitions â were evaluated, significantly improving mandibular kinematics and reducing joint reaction forces.</p>
+          <p class="pub-abstract">Development of functionally graded soft-hard interface prostheses for temporomandibular joint replacement. Five FGM designs — including hard, hard-soft, and three gradual transitions — were evaluated, significantly improving mandibular kinematics and reducing joint reaction forces.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1038/s43246-024-00664-4" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://www.nature.com/articles/s43246-024-00664-4" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1038/s43246-024-00664-4" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://www.nature.com/articles/s43246-024-00664-4" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -952,10 +920,10 @@
           </div>
         </div>
         <div class="pub-body">
-          <p class="pub-abstract">A forward-looking perspective on orthopedic meta-implants â next-generation implants harnessing mechanical metamaterial principles to achieve programmable stiffness, auxeticity, and shape-morphing properties not found in conventional implants. Published open access under Creative Commons (CC BY).</p>
+          <p class="pub-abstract">A forward-looking perspective on orthopedic meta-implants — next-generation implants harnessing mechanical metamaterial principles to achieve programmable stiffness, auxeticity, and shape-morphing properties not found in conventional implants. Published open access under Creative Commons (CC BY).</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1063/5.0179908" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://pubs.aip.org/aip/apb/article/8/1/010901/3037477/Orthopedic-meta-implants" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1063/5.0179908" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://pubs.aip.org/aip/apb/article/8/1/010901/3037477/Orthopedic-meta-implants" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -965,15 +933,15 @@
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
             <div class="pub-title">Deep learning for size-agnostic inverse design of random-network 3D printed mechanical metamaterials <span class="pub-tag tag-adv">Adv. Materials</span> <span class="pub-tag tag-open">Open Access</span></div>
-            <div class="pub-authors">Pahlavani, H., Tsifoutis-Kazolis, K., SaldÃ­var, M.C., Mody, P., Zhou, J., <strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
+            <div class="pub-authors">Pahlavani, H., Tsifoutis-Kazolis, K., Saldívar, M.C., Mody, P., Zhou, J., <strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
             <div class="pub-journal"><em>Advanced Materials</em> <span>36(6), 2303481 (2024)</span></div>
           </div>
         </div>
         <div class="pub-body">
-          <p class="pub-abstract">Deep-DRAM â a size-agnostic inverse design framework combining deep learning and conditional variational autoencoders â generates random-network lattice structures with predefined elastic properties and predefined dimensions. Featured in SciTechDaily and other media as a breakthrough in AI-driven metamaterial design.</p>
+          <p class="pub-abstract">Deep-DRAM — a size-agnostic inverse design framework combining deep learning and conditional variational autoencoders — generates random-network lattice structures with predefined elastic properties and predefined dimensions. Featured in SciTechDaily and other media as a breakthrough in AI-driven metamaterial design.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1002/adma.202303481" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://pure.tudelft.nl/ws/portalfiles/portal/171559967/Advanced_Materials_2023_Pahlavani_Deep_Learning_for_Size_Agnostic_Inverse_Design_of_Random_Network_3D_Printed.pdf" class="pub-btn pub-btn-pdf" target="_blank">ð PDF (TU Delft Repository)</a>
+            <a href="https://doi.org/10.1002/adma.202303481" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://pure.tudelft.nl/ws/portalfiles/portal/171559967/Advanced_Materials_2023_Pahlavani_Deep_Learning_for_Size_Agnostic_Inverse_Design_of_Random_Network_3D_Printed.pdf" class="pub-btn pub-btn-pdf" target="_blank">📄 PDF (TU Delft Repository)</a>
           </div>
         </div>
       </div>
@@ -989,15 +957,15 @@
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
             <div class="pub-title">Bioinspired rational design of bi-material 3D printed soft-hard interfaces <span class="pub-tag tag-nature">Nature Comm.</span> <span class="pub-tag tag-open">Open Access</span></div>
-            <div class="pub-authors">SaldÃ­var, M.C., Tay, E., Issakidou, A., Moosabeiki, V., Fratila-Apachitei, L.E., Doubrovski, E.L., <strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
+            <div class="pub-authors">Saldívar, M.C., Tay, E., Issakidou, A., Moosabeiki, V., Fratila-Apachitei, L.E., Doubrovski, E.L., <strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
             <div class="pub-journal"><em>Nature Communications</em> <span>14, 7919 (2023)</span></div>
           </div>
         </div>
         <div class="pub-body">
           <p class="pub-abstract">A bioinspired design framework for bi-material soft-hard interfaces based on triply periodic minimal surfaces and collagen-like triple helices. Biomimetic architectural strategies dramatically improve interface strength and energy absorption in 3D-printed composites mimicking natural tissue junctions such as bone-tendon connections.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1038/s41467-023-43422-9" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://www.nature.com/articles/s41467-023-43422-9" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1038/s41467-023-43422-9" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://www.nature.com/articles/s41467-023-43422-9" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -1007,14 +975,14 @@
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
             <div class="pub-title">Rational positioning of 3D-printed voxels to realize high-fidelity multifunctional soft-hard interfaces</div>
-            <div class="pub-authors">SaldÃ­var, M.C., Salehi, S., Veeger, R.P.E., Fenu, M., Cantamessa, A., Klimopoulou, M., â¦<strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
+            <div class="pub-authors">Saldívar, M.C., Salehi, S., Veeger, R.P.E., Fenu, M., Cantamessa, A., Klimopoulou, M., …<strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
             <div class="pub-journal"><em>Cell Reports Physical Science</em> <span>4, 101567 (2023)</span></div>
           </div>
         </div>
         <div class="pub-body">
           <p class="pub-abstract">A voxel-level design strategy for multi-material 3D printing that enables rational positioning of material building blocks to achieve high-fidelity replication of soft-hard interfaces with multiple simultaneous functional targets.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1016/j.xcrp.2023.101567" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
+            <a href="https://doi.org/10.1016/j.xcrp.2023.101567" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
           </div>
         </div>
       </div>
@@ -1030,14 +998,14 @@
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
             <div class="pub-title">Design, material, function, and fabrication of metamaterials <span class="pub-tag tag-open">Open Access</span></div>
-            <div class="pub-authors">Zadpoor, A.A., <strong>Mirzaali, M.J.*</strong>, Valdevit, L, Hopkins, J.B.</div>
-            <div class="pub-journal"><em>APL Materials</em> <span>11, 020401 (2023) â Special Issue Editor</span></div>
+            <div class="pub-authors">Zadpoor, A.A., <strong>Mirzaali, M.J.*</strong>, Valdevit, L., Hopkins, J.B.</div>
+            <div class="pub-journal"><em>APL Materials</em> <span>11, 020401 (2023) — Special Issue Editor</span></div>
           </div>
         </div>
         <div class="pub-body">
-          <p class="pub-abstract">Editorial and overview for a landmark special issue on metamaterials, covering design principles, material selection, functional targets, and fabrication strategies â providing a comprehensive roadmap for the field.</p>
+          <p class="pub-abstract">Editorial and overview for a landmark special issue on metamaterials, covering design principles, material selection, functional targets, and fabrication strategies — providing a comprehensive roadmap for the field.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1063/5.0141064" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
+            <a href="https://doi.org/10.1063/5.0141064" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
           </div>
         </div>
       </div>
@@ -1047,15 +1015,15 @@
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
             <div class="pub-title">Deep learning for the rare-event rational design of 3D printed multi-material mechanical metamaterials <span class="pub-tag tag-open">Open Access</span></div>
-            <div class="pub-authors">Pahlavani, H., SaldÃ­var, M.C., Zhou, J., Mol, J.M.C., <strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
+            <div class="pub-authors">Pahlavani, H., Saldívar, M.C., Zhou, J., Mol, J.M.C., <strong>Mirzaali, M.J.*</strong>, Zadpoor, A.A.</div>
             <div class="pub-journal"><em>Communications Materials</em> <span>3, 46 (2022)</span></div>
           </div>
         </div>
         <div class="pub-body">
-          <p class="pub-abstract">Deep learning framework for rare-event identification in multi-material 3D printed mechanical metamaterials â discovering extreme-property designs that conventional sampling methods would miss. Explores hard/soft phase distributions across planar lattice architectures.</p>
+          <p class="pub-abstract">Deep learning framework for rare-event identification in multi-material 3D printed mechanical metamaterials — discovering extreme-property designs that conventional sampling methods would miss. Explores hard/soft phase distributions across planar lattice architectures.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1038/s43246-022-00270-2" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://www.nature.com/articles/s43246-022-00270-2" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.1038/s43246-022-00270-2" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://www.nature.com/articles/s43246-022-00270-2" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -1064,7 +1032,7 @@
         <div class="pub-header" onclick="togglePub(this)">
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
-            <div class="pub-title">Additive Manufacturing of Biomaterials â Design Principles and Their Implementation <span class="pub-tag tag-open">Open Access</span></div>
+            <div class="pub-title">Additive Manufacturing of Biomaterials — Design Principles and Their Implementation <span class="pub-tag tag-open">Open Access</span></div>
             <div class="pub-authors"><strong>Mirzaali, M.J.*</strong>, Moosabeiki, V., Rajaei Harandi, S., Zhou, J., Zadpoor, A.A.</div>
             <div class="pub-journal"><em>Materials</em> <span>15(15), 5457 (2022)</span></div>
           </div>
@@ -1072,8 +1040,8 @@
         <div class="pub-body">
           <p class="pub-abstract">Comprehensive review of design principles for additive manufacturing of biomaterials across metals, polymers, and ceramics. Covers library-based design, topology optimisation, bioinspired design, and meta-biomaterials. One of the most-cited and most-viewed review articles in the journal.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.3390/ma15155457" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://www.mdpi.com/1996-1944/15/15/5457" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text (Open Access)</a>
+            <a href="https://doi.org/10.3390/ma15155457" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://www.mdpi.com/1996-1944/15/15/5457" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text (Open Access)</a>
           </div>
         </div>
       </div>
@@ -1084,14 +1052,14 @@
           <div class="pub-meta">
             <div class="pub-title">Ultra-programmable buckling-driven soft cellular mechanisms <span class="pub-tag tag-open">Open Access</span></div>
             <div class="pub-authors">Janbaz, S., Bobbert, F.S.L., <strong>Mirzaali, M.J.</strong>, Zadpoor, A.A.</div>
-            <div class="pub-journal"><em>Materials Horizons</em> <span>6, 1138â1147 (2019)</span></div>
+            <div class="pub-journal"><em>Materials Horizons</em> <span>6, 1138–1147 (2019)</span></div>
           </div>
         </div>
         <div class="pub-body">
           <p class="pub-abstract">Multi-material buckling-driven metamaterials with high programmability, demonstrating double-side buckling modes alongside conventional instability modes. Applications include force switches, kinematic controllers, and pick-and-place end-effectors for soft robotics. Featured by the Royal Society of Chemistry.</p>
           <div class="pub-actions">
-            <a href="https://doi.org/10.1039/C9MH00125E" class="pub-btn pub-btn-doi" target="_blank">ð DOI</a>
-            <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2019/MH/C9MH00125E" class="pub-btn pub-btn-pdf" target="_blank">ð Full Text</a>
+            <a href="https://doi.org/10.1039/C9MH00125E" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2019/MH/C9MH00125E" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text</a>
           </div>
         </div>
       </div>
@@ -1101,114 +1069,482 @@
           <div class="pub-toggle">+</div>
           <div class="pub-meta">
             <div class="pub-title">Action-at-a-distance metamaterials: Distributed local actuation through far-field global forces <span class="pub-tag tag-open">Open Access</span></div>
-            <div class="pub-authors">Hedayati, R., <strong>Mirzaali, M.J.</strong>, Vergani, L., ZadpÛÜKKÙ]]Û\ÜÏHXZÝ\[[OTX]\X[ÏÙ[OÜ[ÍLH
-N
-OÜÜ[Ù]Ù]Ù]]Û\ÜÏHXXÙHÛ\ÜÏHXXXÝXÝ[ÙXÝ[ÛÙÑ\[XHXÝ[ÛX]XKY\Ý[ÙHY][X]\X[È\Ú[ÈÛÛX[][ÛÈÙÛ^XÛÛX[ÝË]YH
-]^]XÊHÙ[[\ÝXÝ\\ÈÈÜX]HÛÙXÝX]ÜÈÚ]ÛÛ\^XÝX][Û]\ÈÛHHÚ[ÛH\YY[ÜÙKÝ[X[\XØ][ÛÈ[ÙX\XHÛÙØÝXÜËX]\Y[Ñ[ÛÛKÜ]Û\ÜÏHXXXÝ[ÛÈHYHÎËÙÚKÜËÌLL
-ËÌKLNMÎÛ\ÜÏHXXXXYÚH\Ù]HØ[È¼'å%ÈÒOØOHYHÎËÜXËZ\ÜËØZ\Ø\KØ\XÛKÍÌËÌÍLKÌLMMKÐXÝ[ÛX]XKY\Ý[ÙK[Y][X]\X[ËQ\ÝX]YÛ\ÜÏHXXXX\\Ù]HØ[È¼'äá[^ØOÙ]Ù]Ù]Ù]]Ý[OH^X[YÛÙ[\ÈX\Ú[]ÜÌHYHÎËÜØÚÛ\ÛÛÙÛKÚØÚ]][ÛÏÝ\Ù\LÐÛ[PPPPR\Ù]HØ[ÈÛ\ÜÏH\[X\HY]È[XXØ][ÛÈÛÛÛÙÛHØÚÛ\ØOÙ]Ù]ÜÙXÝ[ÛKKHOOOOHPSHOOOOHKOÙXÝ[ÛYHX[H]Û\ÜÏHÙXÝ[ÛZ[\]Û\ÜÏHÙXÝ[ÛZXY\Ü[Û\ÜÏHÙXÝ[Û]YÈX[OÜÜ[Ý\XY[X\ÏÚ]Û\ÜÏH]Y\Ù]H][Y\ØÚ\[\HÜÝ\Ù\ÙX\Ú\ÈÛÜÚ[È]HÛY\ÈÙ[ÛYXÚ[XÜËX]\X[ÈØÚY[ÙK[[ÛYYXØ[[Ú[Y\[ËÜÙ]KKHÝ\[Y[X\ÈX[KOÝ[OHÛ\Ú^N
-\[NÙÛ]ÙZYÚÌÝ^][ÙÜN\\Ø\ÙNÛ]\\ÜXÚ[Î[NØÛÛÜ\KXYJNÛX\Ú[XÝÛNMÈÝ\[Y[X\ÏÜ]Û\ÜÏHX[KYÜYHYHÎËÝÝÝË[ÙY[ÛÛKÚ[Û[Ú[[XYZ[Z\X[KMÍLÍKÈ\Ù]HØ[ÈÛ\ÜÏHX[KXØ\Ý[OH^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏHX[KX]]\ROÙ]]Û\ÜÏHX[K[[YH[Ú[[XYZ\X[OÙ]]Û\ÜÏHX[K\ÛH\ÜÛØÚX]HÙ\ÜÛÜ	[\ÈOÙ]]Û\ÜÏHX[K]ÜXÈ[ËUQHX\XÝÜÙ]ØO]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËØÌÎLÙMÍÌØÊHOÙ]]Û\ÜÏHX[K[[YH	Ñ[Ù[Û\Ù]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈ[ÙYÜYXHÜ[[ØYÙH[\[ÏÙ]Ù]]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÌØYMÌML
-JHÐÏÙ]]Û\ÜÏHX[K[[YHËÚÝÙ\OÙ]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈÝ\ÝZ[XH[ÛX]\X[È\ÚYÛÙ]Ù]]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÎM
-YÍÌÍÊHOÙ]]Û\ÜÏHX[K[[YHXYÛ\Ù]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈÛÙØ\ÝH[ÛX]\X[ÏÙ]Ù]]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÙÍMÙMÙLHPOÙ]]Û\ÜÏHX[K[[YHK[Ø[XOÙ]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈÛHZXÜØ\Ú]XÝ\\È	[\ÈXÝ\OÙ]Ù]]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÌXMYNÌNJHÏÙ]]Û\ÜÏHX[K[[YHÚ\X\OÙ]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈ][KY[Ý[Û[X[X[\[\[ÏÙ]Ù]]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÌML
-KÌXXÎXÊHÔÏÙ]]Û\ÜÏHX[K[[YHËØY\ÛÏÙ]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈÜÛYXÚ[XØ[Ù[Ú[ÈÜYXÚ[Ø[ÛÙÞOÙ]Ù]HYHÎËÝÝÝË[ÙY[ÛÛKÚ[ÜØ\K\[ZÚZKNMLLÈ\Ù]HØ[ÈÛ\ÜÏHX[KXØ\Ý[OH^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËØÌÎLÎM
-Y
-HÔÙ]]Û\ÜÏHX[K[[YHË[ZÚZOÙ]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈ[ÛZ[Y]XÈ\ÚYÛÙ\\ÛÙ[\XÙ\ÏÙ]ØO]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÌØYMÎM
-Y
-HÙ]]Û\ÜÏHX[K[[YHZOÙ]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈÑ[Y\ØÝ[\]ÛÜÜÏÙ]Ù]]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÌXMYNÌØYM
-HÏÙ]]Û\ÜÏHX[K[[YHÝ[Ù[ÏÙ]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈYXÚ[XØ[H[\ØÚÙY\\ÛÙ[\XÙ\ÏÙ]Ù]]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÙÍMÌXMYN
-HÙ]]Û\ÜÏHX[K[[YHHÛÏÙ]]Û\ÜÏHX[K\ÛHØ[Y]OÙ]]Û\ÜÏHX[K]ÜXÈY]JXÊHÛ^N[Û[È	[\È\[ÈÙ][XÙHÞ\Ý[\ÏÙ]Ù]]Û\ÜÏHX[KXØ\]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÍÌÍËÙÍM
-HÏÙ]]Û\ÜÏHX[K[[YH\Ú][È\ÙX\Ú\ÏÙ]]Û\ÜÏHX[K\ÛH[\][Û[ÛÛXÜ]ÜÏÙ]]Û\ÜÏHX[K]ÜXÈPURÈ[ÝÜÈ	[\È\Ú][È\ÙX\Ú\ÈÛH\\[]\Ú]Y\ÏÙ]Ù]Ù]KKHSSSHKOÝ[OHÛ\Ú^N
-\[NÙÛ]ÙZYÚÌÝ^][ÙÜN\\Ø\ÙNÛ]\\ÜXÚ[Î[NØÛÛÜ\K[]]Y
-NÛX\Ú[MÈ[[[H8 %ÜYX]\ÏÜ]Û\ÜÏHX[KYÜYHYHÎËÝÝÝË[ÙY[ÛÛKÚ[Û[ÛÜØXZZÚKÈ\Ù]HØ[ÈÛ\ÜÏHX[KXØ\Ý[OH^YXÛÜ][ÛÛNØÛÛÜ[\]ØÜ\]ÜÜÛÛY\KYÜY[NÈ]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÌØYMÌXMYN
-HOÙ]]Û\ÜÏHX[K[[YHZY[ÛÜØXZZÚOÙ]]Û\ÜÏHX[K\ÛHx $ÌOÙ]]Û\ÜÏHX[K]ÜXÈÝ[OHÛ\Ý[N][XÎÈY]][HX[YXÝ\Y[\[ÎÛH\ÚYÛÜÜHÈ\ÚYÛÜ[Ü[ÈÙ]ØOHYHÎËÝÝÝË[ÙY[ÛÛKÚ[ÙXZ[K^X\[KÈ\Ù]HØ[ÈÛ\ÜÏHX[KXØ\Ý[OH^YXÛÜ][ÛÛNØÛÛÜ[\]ØÜ\]ÜÜÛÛY\KYÜY[NÈ]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÎM
-YÌXMYN
-HVOÙ]]Û\ÜÏHX[K[[YHXZ[HX\[OÙ]]Û\ÜÏHX[K\ÛH8 $ÌOÙ]]Û\ÜÏHX[K]ÜXÈÝ[OHÛ\Ý[N][XÎÈÑ[
-[YY]KX[ÛX]\X[ÈÜÛH\ÜÝYH[Ú[Y\[ÈÙ]ØOHYHÎËÝÝÝË[ÙY[ÛÛKÚ[Ú[K\Z][KMÌÍL
-LLÍÈ\Ù]HØ[ÈÛ\ÜÏHX[KXØ\Ý[OH^YXÛÜ][ÛÛNØÛÛÜ[\]ØÜ\]ÜÜÛÛY\KYÜY[NÈ]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËØÌÎLÎM
-Y
-HÙ]]Û\ÜÏHX[K[[YH[HZ][OÙ]]Û\ÜÏHX[K\ÛHN8 $ÌÏÙ]]Û\ÜÏHX[K]ÜXÈÝ[OHÛ\Ý[N][XÎÈXXÚ[HX\[È[[Û[\ÜÈ[YXÚ[XØ[Y][X]\X[ÈÙ]ØO]Û\ÜÏHX[KXØ\Ý[OHÜ\]ÜÜÛÛY\KYÜY[NÈ]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÌXMYNÌØYM
-HPÔÏÙ]]Û\ÜÏHX[K[[YHX]\XÚ[ÈÜ^Ø[0ë]\Ù]]Û\ÜÏHX[K\ÛHN8 $ÌÏÙ]]Û\ÜÏHX[K]ÜXÈÝ[OHÛ\Ý[N][XÎÈH]ÈÙ]\N[Ú[Ü\Y]X\ÛÛ\ÜÚ]\ÈÙ]Ù]]Û\ÜÏHX[KXØ\Ý[OHÜ\]ÜÜÛÛY\KYÜY[NÈ]Û\ÜÏHX[KX]]\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LÍYYËÙÍMØÌÎLHÏÙ]]Û\ÜÏHX[K[[YHKKÛÛÙ[Ù]]Û\ÜÏHX[K\ÛHN8 $ÌÙ]]Û\ÜÏHX[K]ÜXÈÝ[OHÛ\Ý[N][XÎÈÚ\ÜÛÛYY]È\ØÚ\^Ü[ÈHÚ\ÜÛÛYXÝ[ÛH[\[\ÚYÛÙ]Ù]Ù]KKHTØÈ\Ù\ÈKO]Ý[OHX\Ú[]ÜÜY[ÎØXÚÙÜÝ[ÙØÜ\\Y]\Î\K\Y]\ÊNØÜ\\ÛÛY\KXÜ\NØÞ\ÚYÝÎ\K\ÚYÝÊNÈÝ[OHÛ\Ú^N
-\[NÙÛ]ÙZYÚÌÝ^][ÙÜN\\Ø\ÙNÛ]\\ÜXÚ[Î[NØÛÛÜ\K[]]Y
-NÛX\Ú[XÝÛNMÈTØÈ\Ù\ÈÝ\\\ÙYÜÝ[OHÛ\Ú^N\[NØÛÛÜ\K[]]Y
-NÛX\Ú[XÝÛNMÈTØÈ\Ù\ÈÛË\Ý\\\ÙYHZ\X[H\H]Z[XH[HH[[Ý]][Û[\ÜÚ]ÜNÜ]Ý[OH\Ü^N^ÙØ\LÙ^]Ü\Ü\ÈHYHÎËÜ\ÜÚ]ÜKY[ÜÙX\ÚÜÙX\ÚÝ\O[Z\X[IØXÝÝ\O[X\Ý\Ý\Ú\È\Ù]HØ[ÈÛ\ÜÏH\[X\HÝ[OHÛ\Ú^N
-\[NÜY[ÎLÈÝÜÙHTØÈ\Ù\È[H[\ÜÚ]ÜBØOÙ]Ù]Ù]ÜÙXÝ[ÛKKHOOOOHÔSÈOOOOHKOÙXÝ[ÛYHÜ[È]Û\ÜÏHÙXÝ[ÛZ[\]Û\ÜÏHÙXÝ[ÛZXY\Ü[Û\ÜÏHÙXÝ[Û]YÈ[[ÏÜÜ[Ü[È	[\È]Ø\ÏÚ]Û\ÜÏH]Y\Ù]ÛÛ\]]]H\ÙX\Ú[[ÈÛH][Û[[]\ÜX[YÙ[ÚY\ÈÝ\Ü[ÈÝ\XÜ]ÜIÜÈ\ÙX\ÚYÙ[KÜÙ]]Û\ÜÏHÜ[ËYÜY]Û\ÜÏHÜ[XØ\
-TÐÐHØÝÜ[]ÛÜÜÈ8 %Ý\ÝÛNÝ\ÝÛZ^YÜÝ\ÈÝXÝ\\È[Y[ÙY\Ý[ÈÜÜÜYYXÈ[\[ÈÚ
-]Û\ÜÏHÜ[[Y]HÜ[Û\ÜÏHÜ[X[[Ý[¸ «MLÏÜÜ[Ü[Û\ÜÏHÜ[^YX\x $ÌÜÜ[Ü[Ý[OHÛ\Ú^NÎ[NØÛÛÜ\K[]]Y
-H\XØ[ÜÜ[Ù]Ù]]Û\ÜÏHÜ[XØ\Ý[OHÜ\[YXÛÛÜ\KXYJH
-ÔVÓQRPËTUSTÒSSÑTÈÈ8 %STRNYÚ][[Ë]Ø\ÝH\]YY]KTS[ÈÝØ\ÈH]Û][Û\HZ[[ÈY[]HÚ
-]Û\ÜÏHÜ[[Y]HÜ[Û\ÜÏHÜ[X[[Ý[¸ «
-ÌÏÜÜ[Ü[Û\ÜÏHÜ[^YX\8 $ÌÜÜ[Ü[Ý[OHÛ\Ú^NÎ[NØÛÛÜ\K[]]Y
-H\XØ[ÜÜ[Ù]Ù]]Û\ÜÏHÜ[XØ\
-TÐÐHØÝÜ[]ÛÜÜÈ8 %ÐT[XYÙKYÝZYYÛÛ\]][Û[[^\[Y[[[[\Ú\ÈÙXÝ\Y]Y[ÈÚ
-]Û\ÜÏHÜ[[Y]HÜ[Û\ÜÏHÜ[X[[Ý[¸ «ÌÏÜÜ[Ü[Û\ÜÏHÜ[^YX\ø $ÌÏÜÜ[Ü[Ý[OHÛ\Ú^NÎ[NØÛÛÜ\K[]]Y
-H\XØ[ÜÜ[Ù]Ù]]Û\ÜÏHÜ[XØ\Ý[OHÜ\[YXÛÛÜ\K\Y
-H
-SÈÓQÝ\]\Ü[8 %X[X[\XÛÛÝXÝ[Û][^[ÈY[ÙY]Y[TÜXÚYXÈ[\[ÈÚ
-]Û\ÜÏHÜ[[Y]HÜ[Û\ÜÏHÜ[X[[Ý[¸ «
-LÏÜÜ[Ü[Û\ÜÏHÜ[^YX\8 $ÌÜÜ[Ü[Ý[OHÛ\Ú^NÎ[NØÛÛÜ\K[]]Y
-H\XØ[ÜÜ[Ù]Ù]]Û\ÜÏHÜ[XØ\Ý[OHÜ\[YXÛÛÜ\KXYJH
-ÓQHÙXÝÜ[ÛÚ\Ú[ÛÜ[8 %YÚT\ÛÛ][ÛÜÛYXÚ[XØ[Ù[Ú[ÈÜ^Ù[\][ÛYXÚ[Ø[ÛÙÚXØ[[[\Ú\ÈÙÙ[Ú
-]Û\ÜÏHÜ[[Y]HÜ[Û\ÜÏHÜ[X[[Ý[¸ «ÏÜÜ[Ü[Û\ÜÏHÜ[^YX\¸ $ÌÜÜ[Ü[Ý[OHÛ\Ú^NÎ[NØÛÛÜ\K[]]Y
-HHËÈËÙ\Ý\[ÜÜ[Ù]Ù]]Û\ÜÏHÜ[XØ\
-ÓÈÜ[ÛÛ\]][Û8 %^[YH\TÛÙ[\XÙ\ÈÚ
-]Û\ÜÏHÜ[[Y]HÜ[Û\ÜÏHÜ[X[[Ý[¸ «
-LÏÜÜ[Ü[Û\ÜÏHÜ[^YX\¸ $ÌÏÜÜ[Ü[Ý[OHÛ\Ú^NÎ[NØÛÛÜ\K[]]Y
-HOÜÜ[Ù]Ù]]Û\ÜÏHÜ[XØ\Ý[OHÜ\[YXÛÛÜ\K\Y
-H
-ÓQHÙXÝÜ[ÛÚ\Ú[Û8 %[Ë[Z[Y]XÈY]KZ[\[ÈÚ
-]Û\ÜÏHÜ[[Y]HÜ[Û\ÜÏHÜ[X[[Ý[¸ «ÏÜÜ[Ü[Û\ÜÏHÜ[^YX\8 $ÌÜÜ[Ü[Ý[OHÛ\Ú^NÎ[NØÛÛÜ\K[]]Y
-HHËÈKXØØ\ÏÜÜ[Ù]Ù]]Û\ÜÏHÜ[XØ\Ý[OHÜ\[YXÛÛÜ\KXYJH
-ÐKRQÈ8 %Ñ[Y[ÛZ[Y]XÈ[\XÙ\ÈÚ
-]Û\ÜÏHÜ[[Y]HÜ[Û\ÜÏHÜ[X[[Ý[¸ «
-LÏÜÜ[Ü[Û\ÜÏHÜ[^YX\8 $ÌOÜÜ[Ü[Ý[OHÛ\Ú^NÎ[NØÛÛÜ\K[]]Y
-HOÜÜ[Ù]Ù]Ù]Ù]ÜÙXÝ[ÛKKHOOOOHUÔÈOOOOHKOÙXÝ[ÛYH]ÜÈ]Û\ÜÏHÙXÝ[ÛZ[\]Û\ÜÏHÙXÝ[ÛZXY\Ü[Û\ÜÏHÙXÝ[Û]YÈ[HYYXOÜÜ[]ÜÈ	[\ÈYÚYÚÏÚ]Û\ÜÏH]Y\Ù]Ù]]Û\ÜÏH]ÜËYÜYHYHÎËÜØÚ]XÚZ[KÛÛKÙ[Ú[Y\[Ë]KZ[\ÜÜÚXKZÝË[Y][X]\X[ËX[XZK\YY[K[X]\X[\ØÚY[ÙKÈ\Ù]HØ[ÈÛ\ÜÏH]ÜËXØ\Ý[OH\Ü^NØÚÎÝ^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏH]ÜË[Ý]]ØÚUXÚZ[OÙ]]Û\ÜÏH]ÜËZXY[H[Ú[Y\[ÈH[\ÜÜÚXNÝÈY][X]\X[È[RHYY[HX]\X[ØÚY[ÙOÙ]]Ý[OHÛ\Ú^NÍ\[NØÛÛÜ\K[]]Y
-NÛX\Ú[]ÜLÈXY\XÛH8¡¤Ù]ØOHYHÎËÝÝÝË]\KÛÛKØ\XÛ\ËÜÍÌ
-LL
+            <div class="pub-authors">Hedayati, R., <strong>Mirzaali, M.J.</strong>, Vergani, L., Zadpoor, A.A.</div>
+            <div class="pub-journal"><em>APL Materials</em> <span>6, 036101 (2018)</span></div>
+          </div>
+        </div>
+        <div class="pub-body">
+          <p class="pub-abstract">Introduction of 3D-printable "action-at-a-distance" metamaterials using combinations of honeycomb and bow-tie (auxetic) cellular structures to create soft actuators with complex actuation patterns from a single far-field force. Potential applications in wearable soft robotics. Featured in 3DPrint.com.</p>
+          <div class="pub-actions">
+            <a href="https://doi.org/10.1063/1.5019782" class="pub-btn pub-btn-doi" target="_blank">🔗 DOI</a>
+            <a href="https://pubs.aip.org/aip/apm/article/6/3/036101/121549/Action-at-a-distance-metamaterials-Distributed" class="pub-btn pub-btn-pdf" target="_blank">📄 Full Text</a>
+          </div>
+        </div>
+      </div>
 
-]È\Ù]HØ[ÈÛ\ÜÏH]ÜËXØ\Ý[OH\Ü^NØÚÎÝ^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏH]ÜË[Ý]]Ü[Ù\]\HÈÛÛ[][XØ][ÛÈX]\X[ÏÙ]]Û\ÜÏH]ÜËZXY[HZ[H\\Ý\]\H[[ÈÝYÚYXÝX\ÙY
-[[ÈÙ]]Ý[OHÛ\Ú^NÍ\[NØÛÛÜ\K[]]Y
-NÛX\Ú[]ÜLÈXY\XÛH8¡¤Ù]ØOHYHÎËÝÝÝËY[Ù[ÌÛYKÛYYXKØ[Z\^YÛÜX[[[Ú[[XY[Z\X[KXXÝ][Y][X]\X[ËZ[XXXZÚ[È\Ù]HØ[ÈÛ\ÜÏH]ÜËXØ\Ý[OH\Ü^NØÚÎÝ^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏH]ÜË[Ý]]XZÚ[È
-XHH[
-OÙ]]Û\ÜÏH]ÜËZXY[H[[]\Ú]H\ÙX\Ú\ÈZ[ZXÈ]\HÈ]Û][Û^HX]\X[[\XÙ\ÏÙ]]Ý[OHÛ\Ú^NÍ\[NØÛÛÜ\K[]]Y
-NÛX\Ú[]ÜLÈXY\XÛH8¡¤Ù]ØOHYHÎËÝÝÝËÙ]Û\ÛÛKØ\XÛKØ\YXÚX[Z[[YÙ[ÙKX\ÜÚ\ÝYX\Ú]XÝY[X]\X[ËZ[XY]]K[X[YXÝ\[È\Ù]HØ[ÈÛ\ÜÏH]ÜËXØ\Ý[OH\Ü^NØÚÎÝ^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏH]ÜË[Ý]]Ù]Û\È[]\Ú]HXÚÛÙÞH^ÜÝ\HÙÜ[OÙ]]Û\ÜÏH]ÜËZXY[H\YXÚX[[[YÙ[ÙH\ÜÚ\ÝY\Ú]XÝYX]\X[È[Y]]HX[YXÝ\[ÏÙ]]Ý[OHÛ\Ú^NÍ\[NØÛÛÜ\K[]]Y
-NÛX\Ú[]ÜLÈXY\XÛH8¡¤Ù]ØOHYHÎËÜ\ËÜËÛ]ÜËÌËLL[Ü[Z^][ÛZ\ÛÙ[X]\X[Z[\XÙ\ËLÙ[\Ù]HØ[ÈÛ\ÜÏH]ÜËXØ\Ý[OH\Ü^NØÚÎÝ^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏH]ÜË[Ý]]\ËÜÏÙ]]Û\ÜÏH]ÜËZXY[HÜ[Z^][ÛÙ\TÛÙX]\X[[\XÙ\ÎHÑ[Y[Z]][ÛÙÛKU[ÛÛÛXÝ[ÛÏÙ]]Ý[OHÛ\Ú^NÍ\[NØÛÛÜ\K[]]Y
-NÛX\Ú[]ÜLÈXY\XÛH8¡¤Ù]ØOHYHÎËÜXËØËÜËÙ[ÐÛÛ[Ð\XÛS[[ËÌNKÓRÐÎSRLQH\Ù]HØ[ÈÛ\ÜÏH]ÜËXØ\Ý[OH\Ü^NØÚÎÝ^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏH]ÜË[Ý]]ÞX[ÛØÚY]HÙÚ[Z\ÝHÈX]\X[ÈÜ^ÛÏÙ]]Û\ÜÏH]ÜËZXY[H[K\ÙÜ[[XXHXÚÛ[ËY][ÛÙÙ[[\YXÚ[\Û\È8 %X]\YHÐÏÙ]]Ý[OHÛ\Ú^NÍ\[NØÛÛÜ\K[]]Y
-NÛX\Ú[]ÜLÈY]È\\8¡¤Ù]ØOHYHÎËÌÙ[ÛÛKÌ
-ÌÎØXÝ[ÛX]XKY\Ý[ÙK[Y][X]\X[ËÈ\Ù]HØ[ÈÛ\ÜÏH]ÜËXØ\Ý[OH\Ü^NØÚÎÝ^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏH]ÜË[Ý]]Ñ[ÛÛOÙ]]Û\ÜÏH]ÜËZXY[HH[^[Z[\È[Ý]]HÑ[XHY][X]\X[ÈÚ]\XØ][ÛÈ[ÛÙØÝXÜÏÙ]]Ý[OHÛ\Ú^NÍ\[NØÛÛÜ\K[]]Y
-NÛX\Ú[]ÜLÈXY\XÛH8¡¤Ù]ØOHYHÎËÝÝÝËY[Ù[ÜÝÜY\ËØ\XÛ\ËÛ]\KZ[Ü\\Ë[]Ë[X]\X[È\Ù]HØ[ÈÛ\ÜÏH]ÜËXØ\Ý[OH\Ü^NØÚÎÝ^YXÛÜ][ÛÛNØÛÛÜ[\]È]Û\ÜÏH]ÜË[Ý]]H[Ù]]Û\ÜÏH]ÜËZXY[H]\H[Ü\\È]ÈX]\X[È8 %X]\[ÈÝ\\ÙX\ÚÛ[Ú[Ü\Y\ÚYÛ\X]\X[ÏÙ]]Ý[OHÛ\Ú^NÍ\[NØÛÛÜ\K[]]Y
-NÛX\Ú[]ÜLÈXY\XÛH8¡¤Ù]ØO]Û\ÜÏH]ÜËXØ\]Û\ÜÏH]ÜË[Ý]][[ÚYY[HYØYÙ]]Û\ÜÏH]ÜËZXY[HX]\[ÈÝ\[[]ÜÝÝ\H][ÜY\[ÈHÓÕQLNHÜ\Ú\ÏÙ]Ù]Ù]Ù]ÜÙXÝ[ÛKKHOOOOHÓÓPÕOOOOHKOÙXÝ[ÛYHÛÛXÝ]Û\ÜÏHÙXÝ[ÛZ[\]Û\ÜÏHÙXÝ[ÛZXY\Ü[Û\ÜÏHÙXÝ[Û]YÈÝ[OHXÚÙÜÝ[ØJMKMKMKMJNÈÛÛÜÙÛÛXÝÜÜ[Ù][ÝXÚÚ]Û\ÜÏH]Y\Ý[OHXÚÙÜÝ[[X\YÜYY[
-LYËÍYÌØYM
-HÙ]Ù]]Û\ÜÏHÛÛXÝYÜY]Û\ÜÏHÛÛXÝZ[ÈÏ[ËUQHXÚÏ]Û\ÜÏHÛÛXÝZ][H]Û\ÜÏHÛÛXÝZXÛÛ¼'äéÏÙ]]]Û\ÜÏHÛÛXÝ[X[[XZ[Ù]]Û\ÜÏHÛÛXÝ][YHHYHXZ[ÎKZ\X[PY[KZ\X[PY[ØOÙ]Ù]Ù]]Û\ÜÏHÛÛXÝZ][H]Û\ÜÏHÛÛXÝZXÛÛ¼'äãOÙ]]]Û\ÜÏHÛÛXÝ[X[Y\ÜÏÙ]]Û\ÜÏHÛÛXÝ][YH\\Y[Ù[ÛYXÚ[XØ[[Ú[Y\[ÏÏH[ÙXÙHÍKLËLLÏYZÙ[ÙYÈÑ[H]\[ÂÙ]Ù]Ù]]Û\ÜÏHÛÛXÝZ][H]Û\ÜÏHÛÛXÝZXÛÛ¼'å+Ù]]]Û\ÜÏHÛÛXÝ[X[\ÙX\ÚÙ[\ÏÙ]]Û\ÜÏHÛÛXÝ][YHHYHÎËÜØÚÛ\ÛÛÙÛKÚØÚ]][ÛÏÝ\Ù\LÐÛ[PPPPR\Ù]HØ[ÈÝ[OHÛÛÜÍYÛÛÙÛHØÚÛ\ØO0­ÂHYHÎËÝÝÝË\ÙX\ÚØ]K]ÜÙ[KÓ[Ú[[XYRSZ\X[H\Ù]HØ[ÈÝ[OHÛÛÜÍY\ÙX\ÚØ]OØO0­ÂHYHÎËÜ\ÙX\ÚY[Ù[Ü\ÛÛËÛKZ[Z\X[KÈ\Ù]HØ[ÈÝ[OHÛÛÜÍYH[Ü[ØOÙ]Ù]Ù]]Û\ÜÏHÛÛXÝZ][H]Û\ÜÏHÛÛXÝZXÛÛ¼'ä¯Ù]]]Û\ÜÏHÛÛXÝ[X[ÛØÚX[Ù]]Û\ÜÏHÛÛXÝ][YHHYHÎËÝÝÝË[ÙY[ÛÛKÚ[Û[Ú[[XYZ[Z\X[KMÍLÍKÈ\Ù]HØ[ÈÝ[OHÛÛÜÍY[ÙY[ØO0­ÂHYHÎËÝÚ]\ÛÛKÛZZ\X[H\Ù]HØ[ÈÝ[OHÛÛÜÍYÚ]\ÖØOÙ]Ù]Ù]Ù]]Û\ÜÏHX\\XÙZÛ\]Ý[OHÛ\Ú^NÜ[NÈX\Ú[XÝÛNM¼'åî»î#ÏÙ]ÝÛÈÝ[OHÛÛÜØØ
-YLHH[Ø[\\ÏÜÝÛÏÏYZÙ[ÙYÈÑ[ÏH]\[ÏÜÏHYHÎËÝÝÝËY[Ù[ÜÝYÛKZ\X[KÈ\Ù]HØ[ÈÝ[OH\Ü^N[[KXØÚÎÈX\Ú[]ÜLÈY[ÎLÈXÚÙÜÝ[ØJMKMKMKMJNÈÛÛÜÙLNÈÜ\\Y]\ÎÈÛ\Ú^N
-\[NÈÜ\\ÛÛYØJMKMKMKNÈY]ÈÙXÚX[H[Ù[BØOÙ]Ù]Ù]ÜÙXÝ[ÛKKHOOOOHÓÕTOOOOHKOÛÝ\°ªHH[ËUQHX0­È[Ú[[XYZ\X[H0­È\\Y[Ù[ÛYXÚ[XØ[[Ú[Y\[ËH[ÜÝ[OHX\Ú[]Ü\ÚYÛYÜH[ËUQHX0­ÈHYHXZ[ÎKZ\X[PY[ÛÛXÝØOÜÙÛÝ\KKHOOOOHÐÔTÈOOOOHKOØÜ\ËÈÙÙÛHXXØ][ÛÂ[Ý[ÛÙÙÛTXXY\HÂÛÛÝ][HHXY\\[[[Y[Â][KÛ\ÜÓ\ÝÙÙÛJ	ÛÜ[ÊNÂBËÈ[\XXØ][ÛÈHYX\[Ý[Û[\XÊYX\HÂØÝ[Y[]Y\TÙ[XÝÜ[
-	Ë[\XÊKÜXXÚ
-OÛ\ÜÓ\Ý[[ÝJ	ØXÝ]IÊJNÂ][\Ù]Û\ÜÓ\ÝY
-	ØXÝ]IÊNÂÛÛÝÜÝ\ÈHØÝ[Y[]Y\TÙ[XÝÜ[
-	ËX^YX\YÜÝ\	ÊNÂÜÝ\ËÜXXÚ
-ÈOÂY
-YX\OOH	Ø[	ÈË]\Ù]YX\OOHYX\HÂËÛ\ÜÓ\Ý[[ÝJ	ÚY[ÊNÂH[ÙHÂËÛ\ÜÓ\ÝY
-	ÚY[ÊNÂBJNÂBËÈÛ[ÛÝXÝ]H][ÈYÚYÚ[ÂÛÛÝÙXÝ[ÛÈHØÝ[Y[]Y\TÙ[XÝÜ[
-	ÜÙXÝ[ÛÚYIÊNÂÛÛÝ][ÜÈHØÝ[Y[]Y\TÙ[XÝÜ[
-	Ë][[ÜÈIÊNÂÚ[ÝËY][\Ý[\	ÜØÜÛ	Ë
+    </div>
 
-HOÂ]Ý\[H	ÉÎÂÙXÝ[ÛËÜXXÚ
-ÈOÂÛÛÝÕÜHËÙÙ]ÜHÂY
-Ú[ÝËØÜÛHHÕÜ
-HÝ\[HËYÂJNÂ][ÜËÜXXÚ
-HOÂKÝ[KÛÛÜHKÙ]]X]J	ÚYÊHOOH	ÈÉÈ
-ÈÝ\[È	ÈÙÈ	ÉÎÂJNÂJNÂÜØÜ\ØÙOÚ[
+    <div style="text-align:center; margin-top:32px">
+      <a href="https://scholar.google.ch/citations?user=3B4SmlAAAAAJ" target="_blank" class="btn btn-primary">
+        View All Publications on Google Scholar
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">Team</span>
+      <h2>Our Lab Members</h2>
+      <div class="divider"></div>
+      <p>A multidisciplinary group of researchers working at the frontiers of biomechanics, materials science, and biomedical engineering.</p>
+    </div>
+    <!-- current members label -->
+    <p style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--blue);margin-bottom:14px;">Current Members</p>
+    <div class="team-grid">
+
+      <a href="https://www.linkedin.com/in/mohammad-j-mirzaali-74260135/" target="_blank" class="team-card" style="text-decoration:none;color:inherit;">
+        <div class="team-avatar">MJM</div>
+        <div class="team-name">Mohammad J. Mirzaali</div>
+        <div class="team-role">Associate Professor &amp; PI</div>
+        <div class="team-topic">bio-TIE Lab Director</div>
+      </a>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#c0392b,#e74c3c)">LE</div>
+        <div class="team-name">L. d'Engelbronner</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Biodegradable spinal cage implants</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#27ae60,#16a085)">SC</div>
+        <div class="team-name">S. Chowdhury</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Sustainable biomaterials design</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#8e44ad,#6c3483)">PM</div>
+        <div class="team-name">P. Magnard</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Food waste biomaterials</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#d35400,#e67e22)">AA</div>
+        <div class="team-name">A. Al Sanea</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Bone microarchitectures &amp; fracture</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1a5fa8,#2980b9)">NS</div>
+        <div class="team-name">N. Shariari</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Multi-functional mandibular implants</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#16a085,#1abc9c)">SS</div>
+        <div class="team-name">S. Safarloo</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Optomechanical sensing for mechanobiology</div>
+      </div>
+
+      <a href="https://www.linkedin.com/in/sara-panahkhahi-81500b50/" target="_blank" class="team-card" style="text-decoration:none;color:inherit;">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#c0392b,#8e44ad)">SP</div>
+        <div class="team-name">S. Panahkhahi</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Biomimetic design of hard-soft interfaces</div>
+      </a>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#27ae60,#8e44ad)">JL</div>
+        <div class="team-name">J. Lai</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">3D printed vascular networks</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1a5fa8,#27ae60)">LK</div>
+        <div class="team-name">L. Kunkels</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Mechanically interlocked hard-soft interfaces</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#d35400,#1a5fa8)">PdJ</div>
+        <div class="team-name">P. de Jong</div>
+        <div class="team-role">PhD Candidate</div>
+        <div class="team-topic">Meta(llic) clay: molding &amp; firing of multibody systems</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1a5fa8,#8e44ad)">TS</div>
+        <div class="team-name">T. Sensoy</div>
+        <div class="team-role">Visiting PhD Researcher</div>
+        <div class="team-topic">Design and 3D printing of mandibular implants (Feb 2025–Jun 2026)</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#6c3483,#d35400)">EB</div>
+        <div class="team-name">E. Bilgich</div>
+        <div class="team-role">MSc / Visiting Researcher</div>
+        <div class="team-topic">Single cell printing (Oct 2024–present)</div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#16a085,#27ae60)">SM</div>
+        <div class="team-name">S. Matteucci</div>
+        <div class="team-role">MSc Researcher (Joint)</div>
+        <div class="team-topic">3D printing of wood-based materials (Sep 2024–present)</div>
+      </div>
+
+    </div>
+
+    <!-- ALUMNI -->
+    <p style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:48px 0 14px;">Alumni — PhD Graduates</p>
+    <div class="team-grid">
+
+      <a href="https://www.linkedin.com/in/moosabeiki/" target="_blank" class="team-card" style="text-decoration:none;color:inherit;border-top:3px solid var(--green);">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#27ae60,#1a5fa8)">VM</div>
+        <div class="team-name">Dr. Vahid Moosabeiki</div>
+        <div class="team-role">PhD 2021–2025</div>
+        <div class="team-topic" style="font-style:italic;">"Additively Manufactured Implants: From design for form to design for morphing"</div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ebrahim-yarali/" target="_blank" class="team-card" style="text-decoration:none;color:inherit;border-top:3px solid var(--green);">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#8e44ad,#1a5fa8)">EY</div>
+        <div class="team-name">Dr. Ebrahim Yarali</div>
+        <div class="team-role">PhD 2020–2025</div>
+        <div class="team-topic" style="font-style:italic;">"3D and 4D printed meta-biomaterials for bone tissue engineering"</div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/helda-pahlavani-735069134/" target="_blank" class="team-card" style="text-decoration:none;color:inherit;border-top:3px solid var(--green);">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#c0392b,#8e44ad)">HP</div>
+        <div class="team-name">Dr. Helda Pahlavani</div>
+        <div class="team-role">PhD 2018–2023</div>
+        <div class="team-topic" style="font-style:italic;">"Machine learning and randomness in mechanical metamaterials"</div>
+      </a>
+
+      <div class="team-card" style="border-top:3px solid var(--green);">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1a5fa8,#27ae60)">MCS</div>
+        <div class="team-name">Dr. Mauricio Cruz Saldívar</div>
+        <div class="team-role">PhD 2018–2023</div>
+        <div class="team-topic" style="font-style:italic;">"The Bits of Nature: Bioinspired bitmap composites"</div>
+      </div>
+
+      <div class="team-card" style="border-top:3px solid var(--green);">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#d35400,#c0392b)">HK</div>
+        <div class="team-name">Dr. H.M.A. Kolken</div>
+        <div class="team-role">PhD 2018–2022</div>
+        <div class="team-topic" style="font-style:italic;">"Poisson meets Escher: Exploring the Poisson effect in bone implant design"</div>
+      </div>
+
+    </div>
+
+    <!-- MSc Theses -->
+    <div style="margin-top:48px;">
+      <p style="font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--blue);margin-bottom:20px;">MSc Students &amp; Theses Supervised</p>
+
+      <!-- Current MSc Students -->
+      <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:12px;">Current MSc Students (TUDelft)</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-bottom:28px;">
+        <div style="background:#fff;border-radius:10px;padding:14px 18px;border:1px solid var(--border);border-left:3px solid var(--blue);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--navy);">Szigetvari, G.</div>
+          <div style="font-size:0.82rem;color:var(--muted);font-style:italic;">"Fluid-solid 3D printing"</div>
+          <div style="font-size:0.75rem;color:var(--blue);margin-top:4px;">Feb 2025–present</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:14px 18px;border:1px solid var(--border);border-left:3px solid var(--blue);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--navy);">Mule, F.</div>
+          <div style="font-size:0.82rem;color:var(--muted);font-style:italic;">"Bone responses of metabiomaterials"</div>
+          <div style="font-size:0.75rem;color:var(--blue);margin-top:4px;">Feb 2025–present</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:14px 18px;border:1px solid var(--border);border-left:3px solid var(--blue);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--navy);">van der Valk, P.</div>
+          <div style="font-size:0.82rem;color:var(--muted);font-style:italic;">"Non-planar 3D printing"</div>
+          <div style="font-size:0.75rem;color:var(--blue);margin-top:4px;">Feb 2025–present</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:14px 18px;border:1px solid var(--border);border-left:3px solid var(--blue);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--navy);">Ahmed, R.</div>
+          <div style="font-size:0.82rem;color:var(--muted);font-style:italic;">"Uterus bandage after caesarean section"</div>
+          <div style="font-size:0.75rem;color:var(--blue);margin-top:4px;">Feb 2025–present</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:14px 18px;border:1px solid var(--border);border-left:3px solid var(--blue);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--navy);">d'Engelbronner, L.</div>
+          <div style="font-size:0.82rem;color:var(--muted);font-style:italic;">"Metamaterial scaffolds for mandibular cages"</div>
+          <div style="font-size:0.75rem;color:var(--blue);margin-top:4px;">Feb 2025–present</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:14px 18px;border:1px solid var(--border);border-left:3px solid var(--blue);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--navy);">de Lange, H.</div>
+          <div style="font-size:0.82rem;color:var(--muted);font-style:italic;">"Surface topology and antibacterial activity of Ti6Al4V"</div>
+          <div style="font-size:0.75rem;color:var(--blue);margin-top:4px;">Dec 2024–present</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:14px 18px;border:1px solid var(--border);border-left:3px solid var(--blue);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--navy);">den Hertog, H.</div>
+          <div style="font-size:0.82rem;color:var(--muted);font-style:italic;">"3D surgical planning for long bone malunion"</div>
+          <div style="font-size:0.75rem;color:var(--blue);margin-top:4px;">Feb 2025–present</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:14px 18px;border:1px solid var(--border);border-left:3px solid var(--blue);">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--navy);">Dong, S.</div>
+          <div style="font-size:0.82rem;color:var(--muted);font-style:italic;">"Cermix-metal 3D printing"</div>
+          <div style="font-size:0.75rem;color:var(--blue);margin-top:4px;">Dec 2024–present</div>
+        </div>
+      </div>
+
+      <!-- Former MSc Theses accordion -->
+      <details style="background:#fff;border-radius:var(--radius);border:1px solid var(--border);margin-bottom:14px;overflow:hidden;">
+        <summary style="padding:18px 22px;cursor:pointer;font-weight:700;font-size:0.9rem;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          <span>Former MSc Theses — TUDelft <span style="font-size:0.78rem;color:var(--muted);font-weight:400;margin-left:8px;">(30+ completed)</span></span>
+          <span style="font-size:0.75rem;color:var(--blue);">▼ expand</span>
+        </summary>
+        <div style="padding:0 22px 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Ricci, G.</strong><br><em>"Engineering Hard-Soft Interfaces: Insights from Root-Soil Interaction"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2023–Dec 2024</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Vannucci, M.</strong><br><em>"Hybrid metamaterials in the design of mandibular implants"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2023–Aug 2024</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>San Segundu, E.</strong><br><em>"Multi-material 4D-printing of a magneto-responsive hydrogel scaffold"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2023–Aug 2024</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Arias, S.</strong><br><em>"Knowledge-based design integration in smart prosthetic socket"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2023–Aug 2024</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Cussen, K.</strong><br><em>"Micro-4D printed medical devices"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2023–Apr 2024</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Zwart, M.</strong><br><em>"Functionally Graded 3D-Printed Scaffolds via Direct Ink Writing"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2023–Mar 2024</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Ferilli, L.</strong><br><em>"Influence of model parameters in FE model of a TAVI valve"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2022–Apr 2025</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>van Tunen, R.</strong><br><em>"Computational Predictive Modeling of a Novel Pulmonary Valved Conduit"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2022–Nov 2023</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Mubeen, A.A.</strong><br><em>"Two-Photon Polymerization 4D Printing of Mechanical Metamaterials"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2022–Aug 2023</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>van Hoften, R.</strong><br><em>"Mechanical and Chemical Characterization of a 3D Printed Ear Implant"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2021–Feb 2023</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Tay, E.</strong><br><em>"A Bone Remodelling Approach For Biphasic Metamaterial Optimisation"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2021–Aug 2022</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Wu, C.</strong><br><em>"Bending- and stretching-dominated metamaterials"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2021–May 2022</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Troost, L.</strong><br><em>"Transtibial prosthesis with temperature and pressure sensory systems"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2020–Apr 2022</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>de Winter, N.</strong><br><em>"Design of patient-specific orthopedic plate for proximal femur fixation"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2021–May 2022</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Fokker, M.</strong><br><em>"Development of crumpled-based meta-biomaterials as bone filling substitutes"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2018–Jun 2022</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>van Kootwijk, A.</strong><br><em>"Workflow for designing patient-specific mandibular reconstruction implants"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2020–Sep 2021</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Cazier, J.</strong><br><em>"Morphological and mechanical assessment of osteochondral unit"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2019–Sep 2023</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Veeger, R.</strong><br><em>"Nano-indentation of functionally graded composites"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2019–Oct 2021</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Pitta Kruiz, C.</strong><br><em>"3D printing of metal-polymer interface"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2019–Sep 2021</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Khan, A.</strong><br><em>"Design and multi-material additive manufacturing of functionally graded fracture fixation plate"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2019–Sep 2023</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Tsifoutis Kazolis, K.</strong><br><em>"Patient-specific 3D-printed scoliosis braces"</em><br><span style="color:var(--muted);font-size:0.75rem;">Aug 2019–Aug 2022</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Peeters, D.</strong><br><em>"Auxetic/non-auxetic 3D scaffold for bone tissue regeneration"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep 2019–Nov 2020</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Gkoni, I.</strong><br><em>"Large bone-implants for osteochondral regeneration, fabrication and ex-vivo testing"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jan 2019–Oct 2020</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Dimaraki, A.</strong><br><em>"3D bioprinting of cartilage"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jun 2019–Jul 2020</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Oldhoff, M.</strong><br><em>"Patient-specific 3D-printed temporomandibular joints (TMJ)"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jan 2019–Dec 2019</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Gunashekar, D.</strong><br><em>"Multiscale anisotropic architecture in bio-inspired materials"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jun 2018–Aug 2019</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Herranz de la Nava, A.</strong><br><em>"Voxel-based additive manufacturing of biomimetic functionally graded materials"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jan–Nov 2018</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Cruz Saldivar, M.</strong><br><em>"Bone ingrowth and medial tibial collapse analysis using FEM"</em><br><span style="color:var(--muted);font-size:0.75rem;">Feb–Sep 2018</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Guvenir, S.</strong><br><em>"Glaucomatous rat eye optic nerve head biomechanics with FEM"</em><br><span style="color:var(--muted);font-size:0.75rem;">Feb–Sep 2018</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Edens, M.</strong><br><em>"Voxel-based additive manufacturing of biomimetic hard-soft materials"</em><br><span style="color:var(--muted);font-size:0.75rem;">Sep–Jun 2018</span></div>
+        </div>
+      </details>
+
+      <details style="background:#fff;border-radius:var(--radius);border:1px solid var(--border);margin-bottom:14px;overflow:hidden;">
+        <summary style="padding:18px 22px;cursor:pointer;font-weight:700;font-size:0.9rem;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          <span>Former MSc Theses — Joint &amp; International Programs</span>
+          <span style="font-size:0.75rem;color:var(--blue);">▼ expand</span>
+        </summary>
+        <div style="padding:0 22px 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Carbini, M.</strong><br><em>"Enhancing toughness and fatigue life of Hard-Soft Interfaces via FGM"</em><br><span style="color:var(--muted);font-size:0.75rem;">May–Sep 2022</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Limuti, M.</strong><br><em>"Rate-dependent mechanical meta-materials"</em><br><span style="color:var(--muted);font-size:0.75rem;">May–Sep 2022</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Ghalayani, A.</strong><br><em>"Programming single and multi-material 4D printed structures"</em><br><span style="color:var(--muted);font-size:0.75rem;">Aug 2020–Jun 2021</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Abaeian, A.</strong><br><em>"Buckling analysis of mechanical metamaterials"</em><br><span style="color:var(--muted);font-size:0.75rem;">Aug 2019–Jun 2020</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Amani, M.</strong><br><em>"Patient-specific 3D printing of transtibial socket prosthesis"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jul 2019–Jun 2020</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Trabattoni, E.</strong><br><em>"Multi-material 3D printing of torsion-resistance biomimetic composites"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jun–Nov 2019</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Tonarelli, G.</strong><br><em>"FE modeling of biomimetic torsion-resistance composites"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jun–Nov 2019</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Caracciolo, A.</strong><br><em>"Dual-phase interaction of metamaterials with superimposed shapes"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jun–Nov 2018</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Singanamalla, H.</strong> (POLIMI)<br><em>"Numerical analysis of trabecular bone using voxel-based model"</em><br><span style="color:var(--muted);font-size:0.75rem;">May 2017–Apr 2018</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Bouwakdh, F.</strong> (POLIMI)<br><em>"Effect of mechanical properties' distribution on porcine trabecular bone"</em><br><span style="color:var(--muted);font-size:0.75rem;">Oct 2017–Feb 2018</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Böhm, C.</strong> (POLIMI)<br><em>"Effects of fatigue loading on trabecular bone"</em><br><span style="color:var(--muted);font-size:0.75rem;">May–Oct 2017</span></div>
+          <div style="padding:10px 14px;border-radius:8px;background:var(--light-bg);font-size:0.83rem;"><strong>Ferrario, D.</strong> (POLIMI)<br><em>"Effect of morphological and clinical parameters on damage accumulation in porcine trabecular bone"</em><br><span style="color:var(--muted);font-size:0.75rem;">Jul 2016–Apr 2017</span></div>
+        </div>
+      </details>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;">
+        <a href="https://repository.tudelft.nl/search?search_term=mirzaali&object_type=master_thesis" target="_blank" class="btn btn-primary" style="font-size:0.85rem;padding:10px 20px;">
+          Browse All MSc Theses in TU Delft Repository
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWS ===== -->
+<section id="news">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">In the Media</span>
+      <h2>News &amp; Highlights</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="news-grid">
+
+      <a href="https://scitechdaily.com/engineering-the-impossible-how-metamaterials-and-ai-redefine-material-science/" target="_blank" class="news-card" style="display:block;text-decoration:none;color:inherit;">
+        <div class="news-outlet">SciTechDaily</div>
+        <div class="news-headline">Engineering the Impossible: How Metamaterials and AI Redefine Material Science</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:10px;">Read article →</div>
+      </a>
+
+      <a href="https://www.nature.com/articles/s43246-024-00448-w" target="_blank" class="news-card" style="display:block;text-decoration:none;color:inherit;">
+        <div class="news-outlet">Springer Nature / Communications Materials</div>
+        <div class="news-headline">Behind the Paper: "Curvature tuning through defect-based 4D printing"</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:10px;">Read article →</div>
+      </a>
+
+      <a href="https://www.tudelft.nl/en/2024/me/media/amir-zadpoor-and-mohammad-mirzaali-about-metamaterials-in-bnn-breaking" target="_blank" class="news-card" style="display:block;text-decoration:none;color:inherit;">
+        <div class="news-outlet">BNN Breaking (via TU Delft)</div>
+        <div class="news-headline">Delft University Researchers Mimic Nature to Revolutionize Material Interfaces</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:10px;">Read article →</div>
+      </a>
+
+      <a href="https://www.wevolver.com/article/artificial-intelligence-assisted-architected-materials-in-additive-manufacturing" target="_blank" class="news-card" style="display:block;text-decoration:none;color:inherit;">
+        <div class="news-outlet">Wevolver / University Technology Exposure Program</div>
+        <div class="news-headline">Artificial Intelligence Assisted Architected Materials in Additive Manufacturing</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:10px;">Read article →</div>
+      </a>
+
+      <a href="https://phys.org/news/2023-12-optimization-hardsoft-material-interfaces-3d.html" target="_blank" class="news-card" style="display:block;text-decoration:none;color:inherit;">
+        <div class="news-outlet">Phys.org</div>
+        <div class="news-headline">Optimization of Hard-Soft Material Interfaces: A 3D Printed Imitation of Bone-Tendon Connections</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:10px;">Read article →</div>
+      </a>
+
+      <a href="https://pubs.rsc.org/en/Content/ArticleLanding/2019/MH/C9MH00125E" target="_blank" class="news-card" style="display:block;text-decoration:none;color:inherit;">
+        <div class="news-outlet">Royal Society of Chemistry / Materials Horizons</div>
+        <div class="news-headline">Ultra-programmable buckling-driven soft cellular mechanisms — featured by RSC</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:10px;">View paper →</div>
+      </a>
+
+      <a href="https://3dprint.com/207380/action-at-a-distance-metamaterials/" target="_blank" class="news-card" style="display:block;text-decoration:none;color:inherit;">
+        <div class="news-outlet">3DPrint.com</div>
+        <div class="news-headline">TU Delft Examines Innovative 3D Printable Metamaterials with Applications in Soft Robotics</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:10px;">Read article →</div>
+      </a>
+
+      <a href="https://www.tudelft.nl/en/stories/articles/nature-inspires-new-materials" target="_blank" class="news-card" style="display:block;text-decoration:none;color:inherit;">
+        <div class="news-outlet">TU Delft</div>
+        <div class="news-headline">Nature Inspires New Materials — featuring our research on bioinspired designer materials</div>
+        <div style="font-size:0.75rem;color:var(--muted);margin-top:10px;">Read article →</div>
+      </a>
+
+      <div class="news-card">
+        <div class="news-outlet">Financieele Dagblad</div>
+        <div class="news-headline">Featuring our ventilator prototype developed during the COVID-19 crisis</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag" style="background:rgba(255,255,255,0.15); color:#fff">Contact</span>
+      <h2>Get in Touch</h2>
+      <div class="divider" style="background:linear-gradient(90deg,#64b5f6,#27ae60)"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>bio-TIE Lab</h3>
+
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value"><a href="mailto:M.J.Mirzaali@tudelft.nl">M.J.Mirzaali@tudelft.nl</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Address</div>
+            <div class="contact-value">
+              Department of Biomechanical Engineering<br/>
+              TU Delft, Office 34 E-3-210<br/>
+              Mekelweg 2, 2628 CD Delft, The Netherlands
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🔬</div>
+          <div>
+            <div class="contact-label">Research Profiles</div>
+            <div class="contact-value">
+              <a href="https://scholar.google.ch/citations?user=3B4SmlAAAAAJ" target="_blank" style="color:#64b5f6">Google Scholar</a> ·
+              <a href="https://www.researchgate.net/profile/Mohammad-J-Mirzaali" target="_blank" style="color:#64b5f6">ResearchGate</a> ·
+              <a href="https://research.tudelft.nl/en/persons/m-j-mirzaali/" target="_blank" style="color:#64b5f6">TU Delft Portal</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">💼</div>
+          <div>
+            <div class="contact-label">Social</div>
+            <div class="contact-value">
+              <a href="https://www.linkedin.com/in/mohammad-j-mirzaali-74260135/" target="_blank" style="color:#64b5f6">LinkedIn</a> ·
+              <a href="https://twitter.com/mjmirzaali" target="_blank" style="color:#64b5f6">Twitter/X</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="map-placeholder">
+        <div style="font-size:3rem; margin-bottom:16px">🗺️</div>
+        <p><strong style="color:#cbd5e1">TU Delft Campus</strong><br/>Mekelweg 2, 2628 CD Delft<br/>The Netherlands</p>
+        <br/>
+        <a href="https://www.tudelft.nl/en/staff/m.j.mirzaali/" target="_blank"
+           style="display:inline-block; margin-top:12px; padding:10px 22px; background:rgba(255,255,255,0.15); color:#e2e8f0; border-radius:8px; font-size:0.85rem; border:1px solid rgba(255,255,255,0.2);">
+          View Official TU Delft Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2025 bio-TIE Lab · Mohammad J. Mirzaali · Department of Biomechanical Engineering, TU Delft</p>
+  <p style="margin-top:6px">Designed for the bio-TIE Lab · <a href="mailto:M.J.Mirzaali@tudelft.nl">Contact</a></p>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  // Toggle publications
+  function togglePub(header) {
+    const item = header.parentElement;
+    item.classList.toggle('open');
+  }
+
+  // Filter publications by year
+  function filterPubs(year) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+
+    const groups = document.querySelectorAll('.pub-year-group');
+    groups.forEach(g => {
+      if (year === 'all' || g.dataset.year === year) {
+        g.classList.remove('hidden');
+      } else {
+        g.classList.add('hidden');
+      }
+    });
+  }
+
+  // Smooth active nav link highlighting
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      const sTop = s.offsetTop - 80;
+      if (window.scrollY >= sTop) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? '#fff' : '';
+    });
+  });
+</script>
+
+</body>
+</html>
